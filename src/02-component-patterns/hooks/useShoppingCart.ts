@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { ProductInCart, Product } from '../interfaces/interfaces';
-import { products } from '../data/products';
 
 export const useShoppingCart = () => {
     const [shoppingCart, setShoppingCart] = useState<{ [key:string]: ProductInCart }>({})
