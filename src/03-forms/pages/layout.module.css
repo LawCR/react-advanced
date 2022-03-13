@@ -1,0 +1,92 @@
+.container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url('https://c.wallhere.com/photos/f4/c3/women_hoods_monochrome_face_portrait_Dennis_Drozhzhin-51509.jpg!d');
+    height: 100vh;
+}
+
+.nav_container {
+    background-color: transparent;
+    opacity: 0.8;
+    width: calc(100vw - 250px);
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav_logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.nav_logo p {
+    padding-left: 15px;
+}
+
+.nav_options {
+    flex: 1;
+}
+
+.nav_options_list {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_options_list li {
+    list-style: none;
+    font-weight: bold;
+}
+
+
+/* Form */
+
+.form_container {
+    height: calc(100vh - 62px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    height: 250px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form_input{
+    border-radius: 22px;
+    outline: none;
+    padding: 17px;
+    border: none;
+    opacity: 0.3;
+    font-weight: 700;
+}
+
+.form_input::placeholder{
+    color: #000;
+}
+
+.form_button{
+    border-radius: 22px;
+    padding: 17px;
+    font-weight: bold;
+    background-color: rgb(240, 102, 102);
+    border: none;
+    color: white;
+}
+.form_button:hover{
+    opacity: 0.7;
+}
+
+
+
