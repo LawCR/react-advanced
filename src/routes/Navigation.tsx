@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, NavLink, Route, Routes } from 'react-router-dom'
 import logo from '../logo.svg'
 
-import {FormikBasicPage, RegisterPage, FormikYupPage, FormikComponents, FormikAbstraction, LayoutPage} from '../03-forms/pages'
+import {FormikBasicPage, RegisterPage, FormikYupPage, FormikComponents, FormikAbstraction, RegisterFormikPage, LayoutPage, DynamicForm} from '../03-forms/pages'
 
 const Navigation = () => {
   return (
@@ -26,6 +26,12 @@ const Navigation = () => {
                         <NavLink to="/formik-abstraction" className={({isActive}) => isActive ? 'nav-active' : ''} >Formik Abstraction</NavLink>
                     </li>
                     <li>
+                        <NavLink to="/formik-register" className={({isActive}) => isActive ? 'nav-active' : ''} >Register Formik</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/dynamic-form" className={({isActive}) => isActive ? 'nav-active' : ''} >Dynamic Form</NavLink>
+                    </li>
+                    <li>
                         <NavLink to="/layout" className={({isActive}) => isActive ? 'nav-active' : ''} >Layout</NavLink>
                     </li>
                 </ul>
@@ -37,6 +43,8 @@ const Navigation = () => {
                 <Route path="formik-yup" element={<FormikYupPage />} />
                 <Route path="formik-components" element={<FormikComponents />} />
                 <Route path="formik-abstraction" element={<FormikAbstraction />} />
+                <Route path="formik-register" element={<RegisterFormikPage />} />
+                <Route path="dynamic-form" element={<DynamicForm />} />
                 <Route path="layout" element={<LayoutPage />} />
 
                 <Route path="/*" element={<Navigate to="/register" replace /> } />
